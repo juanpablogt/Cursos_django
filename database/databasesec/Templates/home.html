@@ -1,6 +1,6 @@
 <h1>Message board homepage</h1>
 <ul>
-    {% for message in messages %}
-        <li>{{ message }}</li>
+    {% for databasesec in post_list %}
+        <li>{{ databasesec.text }}</li>
     {% endfor %}
 </ul>
