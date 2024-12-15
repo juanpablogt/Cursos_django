@@ -8,4 +8,3 @@ class Post(models.Model):
 #permite que se muestre el texto en el admin
     def __str__(self):
         return self.text[:50]
-
