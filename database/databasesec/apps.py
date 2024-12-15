@@ -7,4 +7,3 @@ class DatabasesecConfig(AppConfig):
 
 
 
-
