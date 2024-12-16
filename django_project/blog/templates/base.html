@@ -2,16 +2,21 @@
 <html>
 <head>
     <title>Blog</title>
-    <link rel='stylesheet' href="{% static 'css/base.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <h1><a href="{% url 'home'%}">Blog</a></h1>
-    </header>
     <div>
-        {% block content %} 
-        {% endblock content %}
+        <header>
+            <div class="nav-left">
+                <h1><a href="{% url 'home' %}">Blog</a></h1>
+    </div>
+    <div class="nav-right">
+        <a href="{% url 'post_new' %}">Nuevo Post</a>
+    </div>
+    </header>
+    {% block content %}
+    {% endblock content %}
     </div>
 </body>
 </html>
