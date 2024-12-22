@@ -16,15 +16,17 @@
     </div>
     </header>
     {% if user.is_authenticated %}
-        <p>Hola {{ user.username }}</p>
+        <p>☻ Wellcome {{ user.username }} ☻</p>
         <p>
-        <a href="{% url 'logout' %}">Cerrar sesión</a>
-        <a href="{% url 'signup' %}">Registrarse</a>
+        <a href="{% url 'logout' %}">♣ Logout ♣</a>
+        </p>
+        <p>
+        <a href="{% url 'signup' %}">♣ Registrarse ♣</a>
         </p>
         
     {% else %}
         <p>You are not logged in</p>
-        <p><a href="{% url 'login' %}">Iniciar sesión</a></p>
+        <p><a href="{% url 'login' %}">+ Iniciar sesión</a></p>
     {% endif %}
     {% block content %}
     {% endblock content %}
